@@ -83,7 +83,7 @@ DROP TABLE IF EXISTS Track;
 CREATE TABLE Track(
 idTrack INT PRIMARY KEY,
 ref VARCHAR(30),
-tname VARCHAR(40),
+tName VARCHAR(40),
 location VARCHAR(30),
 country VARCHAR(30),
 lat VARCHAR(30),
