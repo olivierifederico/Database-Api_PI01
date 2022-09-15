@@ -81,7 +81,7 @@ IGNORE 1 ROWS;
 DROP TABLE IF EXISTS Track;
 
 CREATE TABLE Track(
-idCircuito INT PRIMARY KEY,
+idTrack INT PRIMARY KEY,
 ref VARCHAR(30),
 tname VARCHAR(40),
 location VARCHAR(30),
@@ -106,7 +106,7 @@ CREATE TABLE Race(
 idRace INT PRIMARY KEY,
 yr INT,
 rRound INT,
-idCircuito INT,
+idTrack INT,
 rName VARCHAR(50),
 rDate DATE,
 rTime VARCHAR(45),
@@ -126,9 +126,9 @@ DROP TABLE IF EXISTS PitStop;
 CREATE TABLE PitStop (
 idRace INT,
 idDriver INT,
-vez INT,
+pits INT,
 lap INT,
-hora varchar(30),
+pit_time varchar(30),
 duration VARCHAR(30),
 millis INT
 );
@@ -148,8 +148,8 @@ idQualy INT PRIMARY KEY,
 idRace INT,
 idDriver INT,
 idConstructor INT,
-numero VARCHAR(40),
-position INT,
+qNumconstructor VARCHAR(40),
+qPos INT,
 q1 VARCHAR(30),
 q2 VARCHAR(30),
 q3 VARCHAR(30)
