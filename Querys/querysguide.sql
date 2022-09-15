@@ -32,7 +32,10 @@ LIMIT 1;
 
 #trackMostRaced
 
-SELECT rName, COUNT(idRace) AS races FROM Race
-GROUP BY idTrack
+SELECT t.tName, COUNT(idRace) AS races FROM Race r
+JOIN track t on r.idTrack = t.idTrack
+GROUP BY t.tName
 ORDER BY races DESC
 LIMIT 1;
+
+SELECT * FROM track;
