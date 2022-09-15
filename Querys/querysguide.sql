@@ -38,4 +38,3 @@ GROUP BY t.tName
 ORDER BY races DESC
 LIMIT 1;
 
-SELECT * FROM track;
