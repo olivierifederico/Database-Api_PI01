@@ -14,7 +14,7 @@ class PI1(Model):
         database = conexion
 
 
-#Creacion de objetos para poder acceder a los datos de la db usando Peewee
+#Creacion de tablas para poder acceder a los datos de la db usando Peewee
 
 #Tabla Driver
 class Driver(PI1):
